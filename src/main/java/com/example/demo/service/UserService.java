@@ -1,12 +1,13 @@
 package com.example.demo.service;
 
 import com.example.demo.repositories.UserRepository;
-import com.techprimers.spring_boot_soap_example.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import com.test.soaptest.User;
 
 import java.util.Optional;
+
 
 @Service
 public class UserService {

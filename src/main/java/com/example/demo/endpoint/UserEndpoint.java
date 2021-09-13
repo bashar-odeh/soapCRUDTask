@@ -1,7 +1,7 @@
 package com.example.demo.endpoint;
 
 import com.example.demo.service.UserService;
-import com.techprimers.spring_boot_soap_example.*;
+import com.test.soaptest.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -14,7 +14,7 @@ public class UserEndpoint {
     @Autowired
     private UserService userService;
 
-    @PayloadRoot(namespace = "http://techprimers.com/spring-boot-soap-example",
+    @PayloadRoot(namespace = "http://test.com/soaptest",
             localPart = "getUserRequest")
     @ResponsePayload
     public GetUserResponse getUserRequest(@RequestPayload GetUserRequest request) {
@@ -23,7 +23,7 @@ public class UserEndpoint {
         return response;
     }
 
-    @PayloadRoot(namespace = "http://techprimers.com/spring-boot-soap-example",
+    @PayloadRoot(namespace = "http://test.com/soaptest",
             localPart = "addUserRequest")
     @ResponsePayload
     public AddUserResponse addUserResponse(@RequestPayload AddUserRequest request) {
@@ -32,7 +32,7 @@ public class UserEndpoint {
         response.setUser(request.getUser());
         return response;
     }
-    @PayloadRoot(namespace = "http://techprimers.com/spring-boot-soap-example",
+    @PayloadRoot(namespace = "http://test.com/soaptest",
             localPart = "updateUserRequest")
     @ResponsePayload
     public UpdateUserResponse updateUserResponse(@RequestPayload UpdateUserRequest request) {
@@ -42,7 +42,7 @@ public class UserEndpoint {
         response.setUser(newUser);
         return response;
     }
-    @PayloadRoot(namespace = "http://techprimers.com/spring-boot-soap-example",
+    @PayloadRoot(namespace = "http://test.com/soaptest",
             localPart = "deleteUserRequest")
     @ResponsePayload
     public DeleteUserResponse deleteUserResponse(@RequestPayload DeleteUserRequest  request) {

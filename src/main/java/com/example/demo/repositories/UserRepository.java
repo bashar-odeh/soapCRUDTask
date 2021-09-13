@@ -1,6 +1,6 @@
 package com.example.demo.repositories;
 
-import com.techprimers.spring_boot_soap_example.User;
+import com.test.soaptest.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

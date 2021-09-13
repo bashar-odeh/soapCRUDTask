@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:tns="http://techprimers.com/spring-boot-soap-example"
-           targetNamespace="http://techprimers.com/spring-boot-soap-example"
+           xmlns:tns="http://test.com/soaptest"
+           targetNamespace="http://test.com/soaptest"
            elementFormDefault="qualified">
 
     <xs:complexType name="user">
