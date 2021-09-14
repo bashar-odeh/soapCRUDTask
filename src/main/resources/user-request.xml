@@ -1,9 +1,48 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:us="http://techprimers.com/spring-boot-soap-example">
+                  xmlns:us="http://test.com/soaptest">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:addUserRequest>
+          <us:user>
+            <us:_id>bashar</us:_id>
+            <us:name>bashar</us:name>
+             <us:salary>bashar</us:salary>
+            </us:user>
+        </us:addUserRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://test.com/soaptest">
     <soapenv:Header/>
     <soapenv:Body>
         <us:getUserRequest>
             <us:name>bashar</us:name>
         </us:getUserRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://test.com/soaptest">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:updateUserRequest>
+          <us:user>
+            <us:_id>bashar</us:_id>
+            <us:name>bashar</us:name>
+             <us:salary>bashar</us:salary>
+            </us:user>
+        </us:updateUserRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://test.com/soaptest">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:deleteUserRequest>
+            <us:name>bashar</us:name>
+        </us:deleteUserRequest>
     </soapenv:Body>
 </soapenv:Envelope>
